@@ -2,6 +2,7 @@
 Description=Load USB gadget scheme
 Requires=sys-kernel-config.mount
 After=sys-kernel-config.mount
+DefaultDependencies=no
 
 [Service]
 ExecStart=/usr/bin/gt load -o mtp-ffs.scheme mtp-ffs
